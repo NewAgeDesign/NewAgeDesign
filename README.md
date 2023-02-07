@@ -5,6 +5,7 @@
 - 📫 How to reach me? well, there's here, 
      - Email: tawinia6@gmail.com 
      - Whatsapp: +255 62 566 1901
+     - Instagram: newagedesigntz
 
 <!---
 NewAgeDesign/NewAgeDesign is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
