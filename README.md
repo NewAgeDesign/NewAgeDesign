@@ -54,7 +54,7 @@ Shinrin-Yoku, or forest bathing, means immersing ourselves in nature. We find be
 4. **Empowerment:** Empower clients through education, training, and support, enabling them to maximize the value of our services and technologies to achieve their business objectives.
 5. **Fun:** Create positive and enjoyable experiences for clients in their interactions with our team, fostering a fun and engaging partnership that enhances collaboration and satisfaction.
 
-- Logo, Letterhead, Business Card, Brand Guide Book.
+###**Contact Info**
      - Email: tawinia6@gmail.com 
      - Whatsapp: +255 62 566 1901
      - Cell: +254 11 000 3602 | +255 62 566 1901
