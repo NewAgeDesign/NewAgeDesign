@@ -6,7 +6,7 @@ New Age Design TZ is a graphics design and software development agency that cate
 
 ### Mission
 
-Our mission is to blend creativity and technology seamlessly, crafting innovative digital solutions that captivate and inspire. Grounded in our commitment to excellence, we strive to empower businesses with cutting-edge graphic design and software development services that elevate their brand identity and propel their success in the digital realm. With a passion for pushing boundaries and a dedication to client satisfaction, we transform ideas into impactful experiences, driving growth and differentiation in a rapidly evolving digital landscape.
+To blend creativity and technology seamlessly, crafting innovative digital solutions that captivate and inspire. Grounded in our commitment to excellence, we strive to empower businesses with cutting-edge design and software development services that elevate their brand identity and propel their success in the digital realm. With a passion for pushing boundaries and a dedication to client satisfaction, we transform ideas into impactful experiences, driving growth and differentiation in a rapidly evolving digital landscape.
 
 ### Vision
 
