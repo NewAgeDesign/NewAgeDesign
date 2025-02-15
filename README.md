@@ -1,64 +1,65 @@
 # New Age Design TZ
 
-New Age Design TZ is a graphics design and software development agency that caters to business needs and solutions. Dealing with everything from visual designs to automation.
+At New Age Design TZ, we craft brands that are timeless, impactful, and purpose-driven. Every detail matters—every pixel, every line of code, every strategic decision. Our approach is grounded in excellence, precision, and trust, ensuring that our clients don’t just stand out—they dominate.
 
 ## Mission, Vision and Core Values
 
 ### Mission
 
-To blend creativity and technology seamlessly, crafting innovative digital solutions that captivate and inspire. Grounded in our commitment to excellence, we strive to empower businesses with cutting-edge design and software development services that elevate their brand identity and propel their success in the digital realm. With a passion for pushing boundaries and a dedication to client satisfaction, we transform ideas into impactful experiences, driving growth and differentiation in a rapidly evolving digital landscape.
+We craft world-class digital experiences that blend artistry and technology, empowering high-end brands to stand out with precision, elegance, and impact. Our work is driven by innovation, excellence, and a relentless pursuit of mastery.
 
 ### Vision
 
-Our vision is to pioneer the future of digital innovation, redefining the way businesses engage with their audiences and harnessing the power of design and technology to create lasting impact. We envision a world where seamless integration of artistry and functionality leads to transformative user experiences, setting new standards of excellence in the digital realm. Guided by our relentless pursuit of creativity and innovation, we aspire to be the trusted partner of choice for businesses seeking to thrive in an ever-evolving digital landscape, driving progress and shaping the future of design and technology.
+To redefine digital excellence by creating elite, high-end branding and technology solutions that set new industry standards. We are the trusted partner for brands that demand perfection and innovation.
 
 ### **Core Values**
 
-### **KAIZEN: Continuous Improvement**
+### **IKIGAI: Purpose Driven Excellence**
 
-Kaizen emphasizes daily small improvements, aiming for a 1% enhancement each day rather than seeking immediate perfection. We break down complex problems into manageable, achievable goals to facilitate steady progress.
+"A brand without purpose is just decoration."
+We align our expertise with our clients’ core vision—what they love, what they excel at, what the world demands, and what drives success. Our work is not just about aesthetics—it’s about creating profitable, timeless brands that stand for something greater.
 
-### **IKIGAI: Purposeful Living**
+### **SHINRAI: Trust and Legacy**
 
-Ikigai represents having a purpose, focusing on four pillars: “what you love”, “what you’re good at”, “what the world needs”, and “what the world will pay for”. We believe our clients' primary purpose lies at the intersection of these pillars, and we strive to guide them toward this fulfilling balance.
+"We don’t just build brands; we build trust."
+Our commitment to **integrity, transparency, and reliability** ensures every client relationship becomes a lasting legacy. In a world full of fleeting trends, we create brands that endure, earning the confidence of audiences and industries alike.
 
-### **WABI-SABI: Embracing Imperfection**
+### **TAKUMI: Mastery and Precision**
 
-Wabi-Sabi finds beauty in imperfection. We focus on the smallest details, leveraging flaws or weaknesses to our clients’ advantage while enhancing their strengths.
+"Excellence is not a choice—it’s our standard."
+Every project we undertake is a testament to our craftsmanship. From typography to user experience, from code to strategy, we approach our work with an **obsessive dedication to perfection**—because true luxury is found in the details.
 
-### **SHOSHAN: Beginner's Mindset**
+### **KAIZEN: Continuous Refinement**
 
-Shoshan involves approaching challenges with a beginner’s mindset. While we are experts in our field, we remain humble and recognize our knowledge gaps. This humility drives us to thoroughly research and tailor solutions to meet our clients' unique needs.
+"Perfection is a moving target."
+We believe that standing still is falling behind. Through **continuous refinement and innovation**, we keep our clients ahead of the curve, ensuring that their brands remain cutting-edge, sophisticated, and impactful in a constantly evolving world.
 
-### **GAMBARU: Perseverance**
+### **GAMBARU: Relentless Excellence**
 
-Gambaru signifies working hard with tenacity, especially during tough times. We value patience and always strive to do our best, believing that the journey and shared experiences are more rewarding than the final destination.
-
-### **SHINRIN-YOKU: Nature's Inspiration**
-
-Shinrin-Yoku, or forest bathing, means immersing ourselves in nature. We find beauty and timeless wisdom in nature, drawing inspiration from it to enrich our work.
+"Ordinary is never an option."
+We pursue perfection with unwavering dedication. Every challenge, every opportunity, and every brand we touch is transformed with the highest level of **care, strategy, and execution**. We don’t just meet expectations—we redefine them.
 
 **Internal Goals:**
 
-1. **Creativity:** Nurturing a workplace culture that encourages imaginative thinking, innovation, and creative problem-solving among team members.
-2. **Excellence:** Strive for continuous improvement and uphold high standards of quality in all internal processes, practices, and deliverables.
-3. **Collaboration:** Foster a collaborative environment where team members feel empowered to share ideas, expertise, and feedback openly, leading to enhanced teamwork and productivity.
-4. **Integrity:** Uphold ethical principles and integrity in all internal interactions, decisions, and actions, promoting a culture of trust, respect, and accountability.
-5. **Continuous Learning:** Provide opportunities for ongoing learning and skill development to empower employees to stay ahead of industry trends and technologies.
+- **Innovation & Creativity:** We foster a culture where **visionary thinking and bold creativity** drive every project. Our team is encouraged to push boundaries and redefine what’s possible in design and technology.
+- **Uncompromising Excellence:** Every detail matters. We uphold **elite craftsmanship and precision**, ensuring that every project meets the highest global standards.
+- **Strategic Collaboration:** Our team thrives on **seamless synergy**, bringing together diverse expertise to deliver results that **elevate brands beyond competition**.
+- **Integrity & Trust:** We operate with **absolute transparency, reliability, and ethical rigor**, building a brand that clients and partners trust at every level.
+- **Mastery & Lifelong Learning:** The pursuit of **expertise and refinement never stops**. We stay ahead by continuously upgrading our skills, tools, and strategies to shape the future of digital excellence.
 
 **External Goals:**
 
-1. **Client-Centricity:** Prioritize client satisfaction and exceed client expectations by delivering tailored solutions that address their unique needs and goals.
-2. **Impact:** Create meaningful and impactful experiences for clients and their audiences, driving measurable results and positive outcomes for their businesses.
-3. **Adaptability:** Demonstrate adaptability and agility in responding to client needs and industry changes, ensuring that our solutions remain relevant and effective in a rapidly evolving landscape.
-4. **Empowerment:** Empower clients through education, training, and support, enabling them to maximize the value of our services and technologies to achieve their business objectives.
-5. **Fun:** Create positive and enjoyable experiences for clients in their interactions with our team, fostering a fun and engaging partnership that enhances collaboration and satisfaction.
+- **Elite Brand Transformation:** We go beyond design—we craft **powerful brand identities** that command authority, trust, and distinction.
+- **Meaningful Impact:** Every project is designed to **deliver tangible value and long-term success**, ensuring our clients' brands lead in their industries.
+- **Luxury-Grade Adaptability:** The digital landscape evolves fast—we **engineer solutions that keep brands ahead**, ensuring they remain relevant and competitive.
+- **Client Empowerment & Influence:** We equip our clients with **high-level digital strategies and insights**, empowering them to make informed decisions that **amplify their success**.
+- **Unforgettable Experience:** Working with us isn’t just a service—it’s a premium experience. We create **engaging, seamless, and inspiring** collaborations that make our clients feel valued, understood, and confident in their investment.
 
 ### Contact Info
 
 - Email: [tawinia6@gmail.com](mailto:tawinia6@gmail.com)
 - Whatsapp: +255 62 566 1901
-- Cell: +254 11 000 3602 | +255 62 566 1901
+- Cell: +255 75 854 9967 | +255 62 566 1901
 - Instagram: newagedesigntz
 
 <!---
