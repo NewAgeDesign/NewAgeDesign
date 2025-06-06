@@ -10,7 +10,7 @@ At New Age Design TZ, we craft brands that are timeless, impactful, and purpose-
   <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=962fbf&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Instagram logo"  />
   <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="LinkedIn logo"  />
 </div>
-<picture>
+<picture align="center">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NewAgeDesign/NewAgeDesign/output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NewAgeDesign/NewAgeDesign/output/pacman-contribution-graph.svg">
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/NewAgeDesign/NewAgeDesign/output/pacman-contribution-graph-dark.svg">
@@ -33,7 +33,7 @@ At New Age Design TZ, we craft brands that are timeless, impactful, and purpose-
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=newagedesign&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
-### ✍️ Random Dev Quote
+### ✍️ Quote Of The Day
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ### 🔝 Top Contributed Repo
