@@ -45,10 +45,7 @@ At New Age Design TZ, we craft brands that are timeless, impactful, and purpose-
 
 ### Contact Info
 
-- Email: [tawinia6@gmail.com](mailto:tawinia6@gmail.com)
-- Whatsapp: +255 62 566 1901
-- Cell: +255 75 854 9967 | +255 62 566 1901
-- Instagram: newagedesigntz
+- Cell: +255 75 854 9967 | +255 62 566 1901 | +255 11 000 3602
 
 <br><br>
 ## Mission, Vision and Core Values<br>
