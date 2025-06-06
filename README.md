@@ -1,4 +1,4 @@
-# New Age Design TZ
+ic# New Age Design TZ
 
 # 💫 About Me:
 At New Age Design TZ, we craft brands that are timeless, impactful, and purpose-driven. Every detail matters—every pixel, every line of code, every strategic decision. Our approach is grounded in excellence, precision, and trust, ensuring that our clients don’t just stand out, they dominate.
@@ -9,6 +9,7 @@ At New Age Design TZ, we craft brands that are timeless, impactful, and purpose-
   <img src="https://img.shields.io/static/v1?message=Twitter&logo=x&label=&color=000000&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="twitter X logo"  />
   <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=962fbf&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Instagram logo"  />
   <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="LinkedIn logo"  />
+  <a href="mailto: tawinia6@gmail.com"><img src="https://img.shields.io/static/v1?message=gmail&logo=gmail&label=&color=red&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Gmail logo"  /></a>
 </div>
 <picture align="center">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NewAgeDesign/NewAgeDesign/output/pacman-contribution-graph-dark.svg">
@@ -34,7 +35,7 @@ At New Age Design TZ, we craft brands that are timeless, impactful, and purpose-
 ![](https://github-profile-trophy.vercel.app/?username=newagedesign&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
 ### ✍️ Quote Of The Day
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+![](https://quotes-github-readme.vercel.app/api?type=vertical&theme=radical)
 
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=newagedesign&limit=5&theme=dark&combine_all_yearly_contributions=true)
