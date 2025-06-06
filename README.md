@@ -1,4 +1,4 @@
-ic# New Age Design TZ
+# New Age Design TZ
 
 # 💫 About Me:
 At New Age Design TZ, we craft brands that are timeless, impactful, and purpose-driven. Every detail matters—every pixel, every line of code, every strategic decision. Our approach is grounded in excellence, precision, and trust, ensuring that our clients don’t just stand out, they dominate.
