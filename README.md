@@ -1,7 +1,7 @@
 # New Age Design TZ
 
 # 💫 About Me:
-At New Age Design TZ, we craft brands that are timeless, impactful, and purpose-driven. Every detail matters—every pixel, every line of code, every strategic decision. Our approach is grounded in excellence, precision, and trust, ensuring that our clients don’t just stand out, they dominate.
+I am a Software Developer, Graphics Designer and UI/UX Designer, focused on empowering global brands with creative tech, crafting brands that are timeless, impactful, and purpose-driven. Every detail matters, every pixel, every line of code, every strategic decision. My approach is grounded in excellence, precision, and trust, ensuring that my clients don’t just stand out, they dominate.
 
 <br />
 <div align="center">
