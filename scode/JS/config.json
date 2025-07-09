@@ -1,0 +1,9 @@
+{
+    "background": "#041718",
+    "foreground": "#051F20",
+    "border": "#163832",
+    "primary": "#E0E0E0",
+    "secondary": "#DAF1DE",
+    "active": "#EBD696",
+    "disabled": "#8EB69B"
+}
