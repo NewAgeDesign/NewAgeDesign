@@ -52,7 +52,7 @@ I am a Software Developer, Graphics Designer and UI/UX Designer, focused on empo
 
 ### Mission<br>
 
-We craft world-class digital experiences that blend artistry and technology, empowering high-end brands to stand out with precision, elegance, and impact. Our work is driven by innovation, excellence, and a relentless pursuit of mastery.<br><br>
+To craft world-class digital experiences that blend artistry and technology, empowering high-end brands to stand out with precision, elegance, and impact. Our work is driven by innovation, excellence, and a relentless pursuit of mastery.<br><br>
 
 ### Vision<br>
 
