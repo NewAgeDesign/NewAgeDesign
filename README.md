@@ -24,7 +24,6 @@ Blending **software development, design, and systems thinking**, I create digita
 <br />
 <div align="center">
   <a href="https://wa.me/255625661901"><img src="https://img.shields.io/static/v1?message=WhatsApp&logo=WhatsApp&label=&color=25d366&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="WhatsApp logo"  /></a>
-  <a href="tel:+255758549967"><img src="https://img.shields.io/static/v1?message=Contact(VodacomTanzania)&logo=Contact&label=&color=red&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Contact logo"  /></a>
   <img src="https://img.shields.io/static/v1?message=Twitter&logo=x&label=&color=000000&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="twitter X logo"  />
   <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=962fbf&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="Instagram logo"  />
   <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="LinkedIn logo"  />
@@ -56,80 +55,91 @@ It’s a **creative-tech platform company** in the making:
 
 ### 📫 Let’s Connect
 I collaborate selectively—with **founders, visionaries, and brands** who value precision and innovation.  
-- [Portfolio Website](#)  
-- [LinkedIn](#)
-- [Call Me](tel:+255700000000)
+- [Portfolio Website](#)
 - Cell: +255 75 854 9967 | +255 62 566 1901 | +255 11 000 3602
-- [Email](mailto:tawinia6@gmail.com)
 
 ---
-
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=newagedesign&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=newagedesign&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=newagedesign&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+
+# 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=newagedesign&theme=dark&hide_border=false&include_all_commits=true&count_private=true" height="180px"/>
+  <img src="https://nirzak-streak-stats.vercel.app/?user=newagedesign&theme=dark&hide_border=false" height="180px"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=newagedesign&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" height="180px"/>
+</p>
+
+---
 
 ## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=newagedesign&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
-### ✍️ Quote Of The Day
-![](https://quotes-github-readme.vercel.app/api?type=vertical&theme=radical)
-
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=newagedesign&limit=5&theme=dark&combine_all_yearly_contributions=true)
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=newagedesign&theme=radical&no-frame=false&no-bg=false&margin-w=4" />
+</p>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=newagedesign&icon=0&color=0)](https://visitcount.itsvg.in)
+
+### ✍️ Quote of the Day
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=vertical&theme=radical"/>
+</p>
+
+---
+
+### 🔝 Top Contributed Repos
+
+<p align="center">
+  <img src="https://github-contributor-stats.vercel.app/api?username=newagedesign&limit=5&theme=dark&combine_all_yearly_contributions=true"/>
+</p>
 
 ### Contact Info
 
 - Cell: +255 75 854 9967 | +255 62 566 1901 | +255 11 000 3602
 
-<br><br>
-## Mission, Vision and Core Values<br>
+## 🌌 New Age Design — Brand Manifesto
+## 🌌 Mission
+To craft world-class digital experiences where artistry meets technology—empowering ambitious brands to stand out with precision, elegance, and impact.
 
-### Mission<br>
-
-To craft world-class digital experiences that blend artistry and technology, empowering high-end brands to stand out with precision, elegance, and impact. Our work is driven by innovation, excellence, and a relentless pursuit of mastery.<br><br>
-
-### Vision<br>
-
-To redefine digital excellence by creating elite, high-end branding and technology solutions that set new industry standards. We are the trusted partner for brands that demand perfection and innovation.<br><br>
+## 👁 Vision
+To redefine digital excellence by setting new standards in luxury branding and creative technology. We are the trusted partner for brands that demand perfection.
 
 ---
 
-### Core Values<br>
+## Core Values
 
-<b>IKIGAI:</b> Purpose Driven Excellence<br>"A brand without purpose is just decoration." We align our expertise with our clients’ core vision—what they love, what they excel at, what the world demands, and what drives success. Our work is not just about aesthetics—it’s about creating profitable, timeless brands that stand for something greater.<br><br>
+**IKIGAI — Purpose with Profit**  
+A brand without purpose is decoration. We align vision with impact.  
 
-<b>SHINRAI:</b> Trust and Legacy<br>"We don’t just build brands; we build trust." Our commitment to integrity, transparency, and reliability ensures every client relationship becomes a lasting legacy. In a world full of fleeting trends, we create brands that endure, earning the confidence of audiences and industries alike.<br><br>
+**SHINRAI — Trust & Legacy**  
+We don’t just build brands; we build trust that endures.  
 
-<b>TAKUMI:</b> Mastery and Precision<br>"Excellence is not a choice—it’s our standard." Every project we undertake is a testament to our craftsmanship. From typography to user experience, from code to strategy, we approach our work with an obsessive dedication to perfection—because true luxury is found in the details.<br><br>
+**TAKUMI — Mastery**  
+Excellence is not optional. Every detail matters.  
 
-<b>KAIZEN:</b> Continuous Refinement<br>"Perfection is a moving target." We believe that standing still is falling behind. Through continuous refinement and innovation, we keep our clients ahead of the curve, ensuring that their brands remain cutting-edge, sophisticated, and impactful in a constantly evolving world.<br><br>
+**KAIZEN — Refinement**  
+Perfection is a moving target. We evolve relentlessly.  
 
-<b>GAMBARU:</b> Relentless Excellence<br>"Ordinary is never an option." We pursue perfection with unwavering dedication. Every challenge, every opportunity, and every brand we touch is transformed with the highest level of care, strategy, and execution. We don’t just meet expectations—we redefine them.<br><br>
-
----
-
-### Internal Goals:<br><br>
-<b>Innovation & Creativity:</b> We foster a culture where visionary thinking and bold creativity drive every project. Our team is encouraged to push boundaries and redefine what’s possible in design and technology.<br>
-
-<b>Uncompromising Excellence:</b> Every detail matters. We uphold elite craftsmanship and precision, ensuring that every project meets the highest global standards.<br>
-
-<b>Strategic Collaboration:</b> Our team thrives on seamless synergy, bringing together diverse expertise to deliver results that elevate brands beyond competition.<br>Integrity & Trust: We operate with absolute transparency, reliability, and ethical rigor, building a brand that clients and partners trust at every level.<br>
-
-<b>Mastery & Lifelong Learning:</b> The pursuit of expertise and refinement never stops. We stay ahead by continuously upgrading our skills, tools, and strategies to shape the future of digital excellence.<br>
+**GAMBARU — Relentless Drive**  
+Ordinary is never an option. We pursue what others won’t.  
 
 ---
 
-### External Goals:<br><br>
-<b>Elite Brand Transformation:</b> We go beyond design—we craft powerful brand identities that command authority, trust, and distinction.<br>
+## 🎯 Goals
 
-<b>Meaningful Impact:</b> Every project is designed to deliver tangible value and long-term success, ensuring our clients' brands lead in their industries.<br>
+**Internal**  
+- Innovation as culture.  
+- Elite craftsmanship.  
+- Strategic collaboration.  
+- Integrity without compromise.  
+- Lifelong mastery.  
 
-<b>Luxury-Grade Adaptability:</b> The digital landscape evolves fast—we engineer solutions that keep brands ahead, ensuring they remain relevant and competitive.<br>
-
-<b>Client Empowerment & Influence:</b> We equip our clients with high-level digital strategies and insights, empowering them to make informed decisions that amplify their success.<br>
-
-<b>Unforgettable Experience:</b> Working with us isn’t just a service—it’s a premium experience. We create engaging, seamless, and inspiring collaborations that make our clients feel valued, understood, and confident in their investment.
+**External**  
+- Transform brands into industry authorities.  
+- Deliver results that endure.  
+- Engineer adaptability in a changing world.  
+- Empower clients with influence.  
+- Create unforgettable, luxury-grade experiences.  
