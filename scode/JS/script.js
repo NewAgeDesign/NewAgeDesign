@@ -1,24 +1,4 @@
-function checkYearMonthDay(selector, startYear = 2015, startMonth = 1, startDay = 1) {
-    const startDate = new Date(startYear, startMonth - 1, startDay);
-    const currentDate = new Date();
-    const output = document.querySelector(selector);
-
-    let years = currentDate.getFullYear() - startDate.getFullYear();
-    let months = currentDate.getMonth() - startDate.getMonth();
-    let days = currentDate.getDate() - startDate.getDate();
-
-    if (days < 0) {
-        months--;
-        const prevMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 0);
-        days += prevMonth.getDate();
-    }
-
-    if (months < 0) {
-        years--;
-        months += 12;
-    }
-
-    output.innerHTML = `${years} years, ${months} months, and ${days} days`;
+function checkYearMonthDay() {
 
     const topLines = document.querySelectorAll('.text.top h1');
     const bottomLines = document.querySelectorAll('.text.bottom h1');
@@ -74,5 +54,87 @@ function checkYearMonthDay(selector, startYear = 2015, startMonth = 1, startDay 
 
 // Usage
 document.addEventListener('DOMContentLoaded', () => {
-    checkYearMonthDay('date', 2015, 1, 1);
+    checkYearMonthDay();
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const titles = [
+        'Software Development ',
+        'UI/UX Design ',
+        'Brand Design ',
+        'Creative Strategy '
+    ];
+    const spiralTitles = document.querySelectorAll('.spiral-title');
+    let idx = 0;
+    let charIdx = 0;
+    let typing = true;
+
+    function typeEffect() {
+        spiralTitles.forEach(el => {
+            el.innerHTML = '';
+            // Add typed text, each character in a span
+            for (let i = 0; i < charIdx; i++) {
+                const span = document.createElement('span');
+                span.textContent = titles[idx][i] === ' ' ? '\u00A0' : titles[idx][i];
+                el.appendChild(span);
+            }
+            // Add cursor
+            const cursor = document.createElement('span');
+            cursor.className = 'typewriter-cursor';
+            cursor.textContent = '|';
+            el.appendChild(cursor);
+        });
+
+        if (typing) {
+            if (charIdx < titles[idx].length) {
+                charIdx++;
+                setTimeout(typeEffect, 80);
+            } else {
+                typing = false;
+                setTimeout(typeEffect, 3000);
+            }
+        } else {
+            if (charIdx > 0) {
+                charIdx--;
+                setTimeout(typeEffect, 40);
+            } else {
+                typing = true;
+                idx = (idx + 1) % titles.length;
+                setTimeout(typeEffect, 400);
+            }
+        }
+    }
+
+    typeEffect();
+});
+
+// Clock functionality
+function updateClock() {
+    const now = new Date();
+    const days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+    const dateElement = document.querySelector('.date');
+    const meridian = dateElement.querySelector('.meridian');
+    const timeElement = document.querySelector('time');
+    const data = dateElement.querySelector('.data');
+    const dayIndex = now.getDay();
+
+    // Format time as HH:MM am/pm
+    let hours = now.getHours();
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12 || 12;
+
+    timeElement.textContent = `${hours}:${minutes}`;
+    meridian.textContent = ampm + ' | ' + days[dayIndex];
+
+    // Format date as DD MMM YY
+    const day = now.getDate().toString().padStart(2, '0');
+    const month = now.toLocaleString('en-US', { month: 'short' });
+    const year = now.getFullYear().toString().slice(-2);
+
+    data.textContent = `${day} ${month} ${year}`;
+}
+
+// Start clock
+setInterval(updateClock, 1000);
+updateClock();
