@@ -1,5 +1,5 @@
 .logo{
-    height: 28px;
+    height: 32px;
 }
 header{
     box-shadow: 0 8px 32px 0 rgba(31, 135, 74, 0.11);
@@ -9,14 +9,15 @@ header{
     background: rgba(56, 92, 70, 0.25);
     justify-content: space-between;
     width: calc(100% - 32px);
-    border-radius: 50px;
     align-items: center;
-    padding: 12px 36px;
+    border-radius: 8px;
+    padding: 8px 36px;
     position: fixed;
     display: flex;
     z-index: 10;
     left: 16px;
     top: 16px;
+
     
     .time{
         align-items: center;
@@ -133,8 +134,8 @@ main{
                     >span{
                         letter-spacing: -0.5px;
                         color: var(--active);
-                        line-height: 1;
                         font-size: 42pt;
+                        line-height: 1;
                     }
                 }
                 p{
@@ -606,7 +607,7 @@ main{
                     >span{
                         letter-spacing: -0.5px;
                         color: var(--active);
-                        font-size: 28pt;
+                        font-size: 24pt;
                         line-height: 1;
                     }
                 }
