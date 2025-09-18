@@ -1,9 +1,9 @@
 .logo{
-    height: 32px;
+    height: 44px;
 }
 header{
-    box-shadow: 0 8px 32px 0 rgba(31, 135, 74, 0.11);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
+    box-shadow: 0 8px 32px 0 rgba(31, 135, 74, 0.11);
     border: 1px solid rgba(102, 189, 141, 0.18);
     backdrop-filter: blur(16px) saturate(180%);
     background: rgba(56, 92, 70, 0.25);
@@ -21,7 +21,6 @@ header{
     left: 50%;
     top: 16px;
 
-    
     .time{
         align-items: center;
         flex-direction: row;
@@ -98,6 +97,28 @@ nav {
         }
     }
 }
+.socials{
+    justify-content: start;
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    a{
+        background-color: var(--border);
+        justify-content: center;
+        color: var(--active);
+        border-radius: 50px;
+        align-items: center;
+        padding: 10px 16px;
+        font-size: 18px;
+        display: flex;
+        height: 40px;
+        width: 40px;
+        &:hover{
+            background-color: var(--active);
+            color: var(--foreground);
+        }
+    }
+}
 main{
     scroll-snap-type: y mandatory;
     flex-direction: column;
@@ -115,6 +136,7 @@ main{
         padding: 0 16px;
         .hero{
             justify-content: center;
+            position: relative;
             height: 100dvh;
             display: flex;
             width: 100%;
@@ -513,7 +535,6 @@ main{
                     gap: 8px;
                     icon{
                         color: var(--foreground);
-                        color: var(--active);
                         margin-right: 8px;
                         font-size: 18pt;
                     }
@@ -521,6 +542,11 @@ main{
                         border: 2px solid var(--active);
                         background-color: transparent;
                         color: var(--active);
+                        icon{
+                            color: var(--active);
+                            margin-right: 8px;
+                            font-size: 18pt;
+                        }
                     }
                 }
                 .div{
@@ -574,8 +600,6 @@ main{
                     resize: none;
                     width: 50%;
                     margin: 0;
-                    min-height: 120px;
-                    resize: vertical;
                     &:focus{
                         border: 2px solid var(--active);
                     }
@@ -587,13 +611,24 @@ main{
 footer{
     background-color: var(--foreground);
     padding: 72px 48px;
+    max-width: 100dvw;
+    flex-wrap: wrap;
+    display: flex;
     width: 100%;
+    gap: 32px;
+    p{
+        text-align: justify;
+        margin-top: -10pt;
+    }
     >span{
-        width: auto;
+        width: calc(25% - 48px);
+        flex-direction: column;
+        min-width: 290px;
+        display: flex;
+        gap: 8px;
         .logo{
             justify-content: center;
             align-items: center;
-            padding: 8px 16px;
             display: flex;
             gap: 8px;
             img{
@@ -606,6 +641,34 @@ footer{
                 line-height: 20px;
                 font-weight: 500;
                 margin: 0;
+            }
+        }
+        small{
+            color: var(--active);
+            margin-top: -4px;
+            font-size: 8pt;
+        }
+        .cta{
+            border: 2px solid var(--active);
+            justify-content: center;
+            color: var(--active);
+            flex-direction: row;
+            margin-bottom: 16px;
+            align-items: center;
+            width: fit-content;
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-weight: 600;
+            font-size: 12pt;
+            display: flex;
+            width: 100%;
+            gap: 8px;
+            &:hover{
+                background-color: var(--active);
+                color: var(--foreground);
+                icon{
+                    color: var(--foreground);
+                }
             }
         }
     }
