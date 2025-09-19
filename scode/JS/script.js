@@ -56,57 +56,48 @@ function checkYearMonthDay() {
 document.addEventListener('DOMContentLoaded', () => {
     checkYearMonthDay();
 });
+// ...existing code...
 
-document.addEventListener('DOMContentLoaded', function () {
-    const titles = [
-        'Software Development ',
-        'UI/UX Design ',
-        'Brand Design ',
-        'Creative Strategy '
-    ];
-    const spiralTitles = document.querySelectorAll('.spiral-title');
-    let idx = 0;
-    let charIdx = 0;
-    let typing = true;
+// ...existing code...
 
-    function typeEffect() {
-        spiralTitles.forEach(el => {
-            el.innerHTML = '';
-            // Add typed text, each character in a span
-            for (let i = 0; i < charIdx; i++) {
-                const span = document.createElement('span');
-                span.textContent = titles[idx][i] === ' ' ? '\u00A0' : titles[idx][i];
-                el.appendChild(span);
+document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('nav a');
+
+    function setActiveNavLink() {
+        const hash = window.location.hash;
+        let found = false;
+        links.forEach(link => {
+            if (link.getAttribute('href') === hash && hash) {
+                link.classList.add('active');
+                found = true;
+            } else {
+                link.classList.remove('active');
             }
-            // Add cursor
-            const cursor = document.createElement('span');
-            cursor.className = 'typewriter-cursor';
-            cursor.textContent = '|';
-            el.appendChild(cursor);
         });
-
-        if (typing) {
-            if (charIdx < titles[idx].length) {
-                charIdx++;
-                setTimeout(typeEffect, 80);
-            } else {
-                typing = false;
-                setTimeout(typeEffect, 3000);
-            }
-        } else {
-            if (charIdx > 0) {
-                charIdx--;
-                setTimeout(typeEffect, 40);
-            } else {
-                typing = true;
-                idx = (idx + 1) % titles.length;
-                setTimeout(typeEffect, 400);
-            }
+        // If no hash match, activate the first link
+        if (!found && links.length > 0) {
+            links.forEach(l => l.classList.remove('active'));
+            links[0].classList.add('active');
         }
     }
 
-    typeEffect();
+    links.forEach(link => {
+        link.addEventListener('click', function (e) {
+            // Only handle anchor links with hashes
+            if (this.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                window.location.hash = this.getAttribute('href');
+                setActiveNavLink();
+            }
+        });
+    });
+
+    window.addEventListener('hashchange', setActiveNavLink);
+
+    setActiveNavLink();
 });
+
+
 
 // Clock functionality
 function updateClock() {

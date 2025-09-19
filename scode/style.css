@@ -2,16 +2,16 @@
     height: 44px;
 }
 header{
+    box-shadow: 0 0 2px 1px rgba(102, 189, 141, 0.25) inset;
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    box-shadow: 0 8px 32px 0 rgba(31, 135, 74, 0.11);
-    border: 1px solid rgba(102, 189, 141, 0.18);
+    border: 1px solid rgba(102, 189, 141, 0.25);
     backdrop-filter: blur(16px) saturate(180%);
-    background: rgba(56, 92, 70, 0.25);
+    background: rgba(56, 92, 70, 0.18);
     justify-content: space-between;
     width: calc(100% - 32px);
     justify-self: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 50pt;
     padding: 8px 36px;
     max-width: 450px;
     position: fixed;
@@ -50,11 +50,11 @@ header{
     }
 }
 nav {
-    box-shadow: 0 8px 32px 0 rgba(31, 135, 74, 0.11);
+    box-shadow: 0 0 2px 1px rgba(102, 189, 141, 0.25) inset;
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    border: 1px solid rgba(102, 189, 141, 0.18);
+    border: 1px solid rgba(102, 189, 141, 0.25);
     backdrop-filter: blur(16px) saturate(180%);
-    background: rgba(56, 92, 70, 0.25);
+    background: rgba(56, 92, 70, 0.18);
     justify-content: center;
     align-items: center;
     height: fit-content;
@@ -68,14 +68,22 @@ nav {
     z-index: 10;
     gap: 8px;
     a {
+        box-shadow: 0 0 2px 1px rgba(196, 196, 196, 0.25) inset;
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        border: 1px solid rgba(193, 194, 193, 0.25);
+        backdrop-filter: blur(16px) saturate(180%);
         color: var(--primary, #E0E0E0);
         text-decoration: none;
         border-radius: 4px;
+        position: relative;
         padding: 6px 12px;
         font-weight: 500;
         font-size: 16px;
         &.cta{
-            border: 2px solid var(--accent);
+            transition: all .3s ease-in-out;
+            border: 2px solid var(--active);
+            background: var(--active);
+            color: var(--background);
             justify-content: center;
             align-items: center;
             padding: 10px 12px;
@@ -83,16 +91,43 @@ nav {
             display: flex;
         }
         icon{
-            color: var(--accent);
+            color: var(--primary);
             font-size: 22px;
         }
         
         &.active, &:hover {
-            background-color: var(--active);
-            color: var(--foreground);
-            
+            box-shadow: 0 0 2px 1px rgba(194, 180, 100, 0.25) inset;
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border: 1px solid rgba(192, 176, 88, 0.25);
+            backdrop-filter: blur(16px) saturate(180%);
+            background: rgba(48, 45, 21, 0.18);
+            color: var(--active);
+            &::after{
+                box-shadow: 0 -2px 8px 1px rgba(194, 180, 100, 1);
+                background-color: var(--active);
+                position: absolute;
+                content: '';
+                height: 2px;
+                width: 60%;
+                bottom: 0;
+                left: 20%;
+            }
+            &.cta{
+                box-shadow: 0 -2px 8px 1px rgba(194, 180, 100, 1);
+                border: 2px solid rgba(192, 176, 88, 0.25);
+                -webkit-backdrop-filter: none;
+                background: var(--active);
+                color: var(--background);
+                backdrop-filter: none;
+                &::after{
+                    box-shadow: 0 -2px 8px 1px rgba(194, 180, 100, 0);
+                    background-color: var(--active);
+                    height: 0;
+                    width: 0;
+                }
+            }
             icon{
-                color: var(--foreground);
+                color: var(--active);
             }
         }
     }
@@ -140,6 +175,40 @@ main{
             height: 100dvh;
             display: flex;
             width: 100%;
+            .grid{
+                background-image: url(res/hbg.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                width: calc(100% + 32px);
+                background-size: cover;
+                position: absolute;
+                height: 100dvh;
+                opacity: 0.2;
+                left: -16px;
+                z-index: -1;
+                top: 0;
+                &::after{
+                    /*set gradient at 90 degrees from bottom to top*/
+                    background-image: linear-gradient(0deg, var(--background), #00000000);
+                    position: absolute;
+                    height: 50dvh;
+                    content: '';
+                    width: 100%;
+                    z-index: 10;
+                    bottom: 0;
+                    left: 0;
+                }
+                &::before{
+                    box-shadow: 0 0 200px var(--background) inset;
+                    position: absolute;
+                    height: 100dvh;
+                    content: '';
+                    width: 100%;
+                    z-index: 0;
+                    left: 0;
+                    top: 0;
+                }
+            }
             .text{
                 justify-content: center;
                 flex-direction: column;
@@ -172,17 +241,15 @@ main{
                     width: 100%;
                 }
                 .cta{
-                    background-color: var(--accent);
-                    color: var(--foreground);
                     justify-content: center;
                     border-radius: 4px;
                     margin-top: 24px;
-                    cursor: pointer;
                     display: flex;
                     gap: 8px;
                     a{
                         border: 2px solid var(--active);
                         justify-content: center;
+                        color: var(--active);
                         flex-direction: row;
                         align-items: center;
                         width: fit-content;
@@ -190,9 +257,11 @@ main{
                         padding: 2px 16px;
                         font-weight: 600;
                         font-size: 12pt;
+                        cursor: pointer;
                         display: flex;
                         gap: 8px;
                         icon{
+                            color: var(--active);
                             height: fit-content;
                             width: fit-content;
                             font-size: 18pt;
@@ -774,7 +843,7 @@ footer{
                     background: rgba(56, 92, 70, 0.25);
                     border-radius: 8px;
                     aspect-ratio: 16/9;
-                    max-width: 720px;
+                    height: auto;
                     width: 100%;
                 }
 
