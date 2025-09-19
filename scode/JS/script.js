@@ -56,12 +56,32 @@ function checkYearMonthDay() {
 document.addEventListener('DOMContentLoaded', () => {
     checkYearMonthDay();
 });
-// ...existing code...
 
 // ...existing code...
 
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Hash update on scroll ---
+    const sections = document.querySelectorAll('main > section[id]');
     const links = document.querySelectorAll('nav a');
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    // Update hash without scrolling
+                    history.replaceState(null, '', '#' + id);
+
+                    // Update nav active class
+                    links.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+                    });
+                }
+            });
+        },
+        {
+            threshold: 0.2 // Section is considered active when 50% visible
+        }
+    );
 
     function setActiveNavLink() {
         const hash = window.location.hash;
@@ -93,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('hashchange', setActiveNavLink);
-
+    sections.forEach(section => observer.observe(section));
     setActiveNavLink();
 });
 

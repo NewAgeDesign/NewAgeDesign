@@ -68,10 +68,7 @@ nav {
     z-index: 10;
     gap: 8px;
     a {
-        box-shadow: 0 0 2px 1px rgba(196, 196, 196, 0.25) inset;
-        -webkit-backdrop-filter: blur(16px) saturate(180%);
-        border: 1px solid rgba(193, 194, 193, 0.25);
-        backdrop-filter: blur(16px) saturate(180%);
+        border: 1px solid rgba(192, 176, 88, 0);
         color: var(--primary, #E0E0E0);
         text-decoration: none;
         border-radius: 4px;
@@ -86,7 +83,7 @@ nav {
             color: var(--background);
             justify-content: center;
             align-items: center;
-            padding: 10px 12px;
+            padding: 8px 12px;
             font-weight: 600;
             display: flex;
         }
@@ -103,7 +100,7 @@ nav {
             background: rgba(48, 45, 21, 0.18);
             color: var(--active);
             &::after{
-                box-shadow: 0 -2px 8px 1px rgba(194, 180, 100, 1);
+                box-shadow: 0 -3.5px 8px 1px rgba(194, 180, 100, 1);
                 background-color: var(--active);
                 position: absolute;
                 content: '';
@@ -254,7 +251,7 @@ main{
                         align-items: center;
                         width: fit-content;
                         border-radius: 8px;
-                        padding: 2px 16px;
+                        padding: 4px 16px;
                         font-weight: 600;
                         font-size: 12pt;
                         cursor: pointer;
