@@ -7,15 +7,11 @@
     -ms-user-select: none;
     user-select:none;
     
-    transition: all .3s ease-in-out;
-    scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'Poppins';
     text-decoration: none;
     letter-spacing: 0.2px;
     color: var(--primary);
-    width: fit-content;
-    max-width: 100dvw;
     line-height: 1.6;
     text-align: left;
     font-size: 12pt;

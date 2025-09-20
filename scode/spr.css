@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3D Sphere Cubes Intersection</title>
-  <style>
   @property --progress {
     syntax: "<number>";
     inherits: true;
@@ -26,7 +19,7 @@
   .img {
     display: inline-grid;
     place-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: conic-gradient(
       black,
@@ -60,7 +53,6 @@
       --progress: 1;
       --angle: 0deg;
     }
-    
   }
 
   .img .wall {
@@ -136,52 +128,3 @@
     box-shadow: 0 0 10vmin rgba(255, 255, 255, 0.08);
     transform: rotateX(45deg) rotateY(45deg) translateY(-20vmin);
   }
-
-  </style>
-</head>
-<body class="img">
-  <div class="wrapper">
-    <div class="container">
-      <div class="wall">
-        <div class="surface"></div>
-        <div class="surface"></div>
-        <div class="left"></div>
-        <div class="top"></div>
-      </div>
-      <div class="wall">
-        <div class="surface"></div>
-        <div class="surface"></div>
-        <div class="left"></div>
-        <div class="top"></div>
-      </div>
-      <div class="wall">
-        <div class="surface"></div>
-        <div class="surface"></div>
-        <div class="left"></div>
-        <div class="top"></div>
-      </div>
-      <div class="wall">
-        <div class="surface"></div>
-        <div class="surface"></div>
-        <div class="left"></div>
-        <div class="top"></div>
-      </div>
-      <div class="wall">
-        <div class="surface"></div>
-        <div class="surface"></div>
-        <div class="left"></div>
-        <div class="top"></div>
-      </div>
-      <div class="wall">
-        <div class="surface"></div>
-        <div class="surface"></div>
-        <div class="left"></div>
-        <div class="top"></div>
-      </div>
-      <div class="ball-container">
-        <div class="ball"></div>
-      </div>
-    </div>
-  </div>
-</body>
-</html>

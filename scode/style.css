@@ -330,10 +330,98 @@ main{
             .img{
                 border-radius: 8px;
                 position: relative;
-                aspect-ratio: 3/2;
-                max-width: 720px;
+                aspect-ratio: 16/9;
                 padding: 8px;
                 width: 100%;
+
+                mix-blend-mode: plus-lighter;
+                display: inline-grid;
+                place-items: center;
+                overflow: hidden;
+                height: 100vh;
+                width: 100vw;
+
+                .container {
+                    transform: rotateX(-45deg) rotateY(45deg);
+                    animation: progress 2.8s linear infinite;
+                    transform-style: preserve-3d;
+                    aspect-ratio: 1/1.2;
+                    position: relative;
+                    width: 50%;
+
+                    .wall {
+                        &:nth-of-type(1) { transform: translateZ(calc(var(--wall-gap) * -2)); --index: 1; }
+                        &:nth-of-type(2) { transform: translateZ(calc(var(--wall-gap) * -1)); --index: 2; }
+                        &:nth-of-type(3) { transform: translateZ(calc(var(--wall-gap) * 0)); --index: 3; }
+                        &:nth-of-type(4) { transform: translateZ(calc(var(--wall-gap) * 1)); --index: 4; }
+                        &:nth-of-type(5) { transform: translateZ(calc(var(--wall-gap) * 2)); --index: 5; }
+                        &:nth-of-type(6) { transform: translateZ(calc(var(--wall-gap) * 3)); --index: 6; }
+                        filter: drop-shadow(0 0 6vmin rgba(255, 255, 255, 0.19));
+                        --wall-gap: 10vmin;
+                        position: absolute;
+                        inset: 0;
+                        
+                        .surface {
+                            background: radial-gradient(circle at 50% 20%, var(--active) calc(var(--circle-diameter) + 0.6vmin), var(--active) calc(var(--circle-diameter) + 0.6vmin), transparent var(--circle-diameter)),
+                            linear-gradient(black, black),
+                            linear-gradient(45deg, #6eccee, #e3a4d0, #ffdc99, #6eccee, #d455ff, #e3a4d0, #ffdc99);
+                            -webkit-mask: radial-gradient(circle at 50% 20%, transparent var(--circle-diameter), black var(--circle-diameter));
+                            mask: radial-gradient(circle at 50% 20%, transparent var(--circle-diameter), black var(--circle-diameter));
+                            background-size: 100% 100%, calc(100% - 0.6vmin*2) calc(100% - 0.6vmin*2), 100%, 100%;
+                            --circle-diameter: calc(22vmin * cos(calc(var(--angle) + var(--angle-offset))));
+                            &:nth-child(2) { transform: translate(4vmin, 5.7vmin); }
+                            --angle-offset: calc(var(--index) * (360deg / 10));
+                            background-position: 0 0, 0.6vmin 0.6vmin, 0 0;
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            inset: 0;
+                        }
+                        .left {
+                            background-size: calc(100% - 0.6vmin*2) calc(100% - 0.6vmin*2), 100%, 100%;
+                            background: linear-gradient(black, black) no-repeat,
+                            linear-gradient(to top, #6eccee, #e3a4d0, #ffdc99, #6eccee) no-repeat;
+                            transform: skewY(55deg) translateY(2.9vmin);
+                            background-position: 0.6vmin 0.6vmin, 0 0;
+                            position: absolute;
+                            width: 4.5vmin;
+                            inset: 0;
+                        }
+                        .top {
+                            -webkit-mask: radial-gradient(calc(var(--circle-diameter) * 0.86) at 50% calc(60% / cos(calc(var(--angle) + var(--angle-offset)))), transparent var(--circle-diameter), black var(--circle-diameter));
+                            mask: radial-gradient(calc(var(--circle-diameter) * 0.86) at 50% calc(60% / cos(calc(var(--angle) + var(--angle-offset)))), transparent var(--circle-diameter), black var(--circle-diameter));
+
+                            background: linear-gradient(black, black) no-repeat,
+                            linear-gradient(to right, #6eccee, #e3a4d0, #ffdc99, #6eccee) no-repeat;
+                            --circle-diameter: calc(22vmin * cos(calc(var(--angle) + var(--angle-offset))));
+                            background-size: calc(100% - 0.6vmin*2) calc(100% - 0.6vmin*2), 100%, 100%;
+                            --angle-offset: calc(var(--index) * (360deg / 10));
+                            background-position: 0.6vmin 0.6vmin, 0 0;
+                            transform: skewX(36deg) translateX(2vmin);
+                            position: absolute;
+                            height: 6vmin;
+                            inset: 0;
+                        }
+                    }
+                    .ball-container {
+                        transform: translateZ(calc(-40vmin + 110vmin * var(--progress)));
+                        filter: drop-shadow(0 0 6vmin rgba(255, 255, 255, 0.19));
+                        place-items: center;
+                        position: absolute;
+                        display: grid;
+                        inset: 0;
+                    }
+
+                    .ball {
+                        background: radial-gradient(21.5vmin 21.5vmin at center, black 20vmin, transparent 20vmin),
+                        conic-gradient(#6eccee, #e3a4d0, #ffdc99, #d455ff, #e3a4d0, #6eccee, #ffdc99, #6eccee);
+                        transform: rotateX(45deg) rotateY(45deg) translateY(-20vmin);
+                        box-shadow: 0 0 10vmin rgba(255, 255, 255, 0.08);
+                        border-radius: 50%;
+                        aspect-ratio: 1;
+                        width: 42vmin;
+                    }
+                    
+                }
             }
 
         }
@@ -701,7 +789,7 @@ footer{
         display: flex;
         gap: 8px;
         .logo{
-            justify-content: center;
+            justify-content: start;
             align-items: center;
             display: flex;
             gap: 8px;
@@ -820,24 +908,14 @@ footer{
             }
             .intro{
                 flex-direction: column-reverse;
+                
                 .text{
-                    color: var(--primary);
-                    line-height: 1.6;
-                    max-width: 720px;
-                    font-size: 14pt;
-                    >h3{
-                        font-weight: 500;
-                        font-size: 24pt;
-                        line-height: 1;
-                    }
-                    b{
-                        font-size: 16pt;
-                    }
-                    p{
-                        color: var(--primary);
-                        text-align: justify;
-                        max-width: 720px;
-                        font-size: 12pt;
+                    >span{
+                        flex-direction: column;
+                        justify-content: center;
+                        *{
+                            text-align: justify;
+                        }
                     }
                 }
                 .img{
@@ -1047,5 +1125,33 @@ footer{
                 }
             }
         }
+    }
+}
+@property --progress {
+    syntax: "<number>";
+    initial-value: 0;
+    inherits: true;
+}
+
+@property --angle {
+    initial-value: 0deg;
+    syntax: "<angle>";
+    inherits: true;
+}
+
+@property --circle-diameter {
+    syntax: "<length>";
+    initial-value: 0;
+    inherits: true;
+}
+
+@keyframes progress {
+    from {
+    --angle: 360deg;
+    --progress: 0;
+    }
+    to {
+    --angle: 0deg;
+    --progress: 1;
     }
 }
