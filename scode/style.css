@@ -1,5 +1,5 @@
 .logo{
-    height: 44px;
+    height: 36px;
 }
 header{
     box-shadow: 0 0 2px 1px rgba(102, 189, 141, 0.25) inset;
@@ -297,9 +297,9 @@ main{
             gap: 32px;
             .text{
                 color: var(--primary);
+                line-height: 1.6;
                 max-width: 720px;
                 font-size: 14pt;
-                line-height: 1.6;
                 >h3{
                     font-weight: 500;
                     font-size: 24pt;
@@ -314,18 +314,26 @@ main{
                     max-width: 720px;
                     font-size: 12pt;
                 }
+                >span{
+                    display: flex;
+                    gap: 32px;
+                    >span{
+                        flex-direction: column;
+                        display: flex;
+                    }
+                    icon{
+                        color: var(--active);
+                        font-size: 36px;
+                    }
+                }
             }
             .img{
-                box-shadow: 0 8px 32px 0 rgba(31, 135, 74, 0.11);
-                -webkit-backdrop-filter: blur(16px) saturate(180%);
-                border: 1px solid rgba(102, 189, 141, 0.18);
-                backdrop-filter: blur(16px) saturate(180%);
-                background: rgba(56, 92, 70, 0.25);
                 border-radius: 8px;
+                position: relative;
+                aspect-ratio: 3/2;
                 max-width: 720px;
-                height: 500px;
                 padding: 8px;
-                width: 50%;
+                width: 100%;
             }
 
         }
@@ -699,7 +707,7 @@ footer{
             gap: 8px;
             img{
                 width: fit-content;
-                height: 48px;
+                height: 36px;
                 padding: 0;
             }
             *{
