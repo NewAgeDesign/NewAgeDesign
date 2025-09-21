@@ -7,11 +7,13 @@
     -ms-user-select: none;
     user-select:none;
     
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'Poppins';
     text-decoration: none;
     letter-spacing: 0.2px;
     color: var(--primary);
+    max-width: 100dvw;
     line-height: 1.6;
     text-align: left;
     font-size: 12pt;
@@ -19,6 +21,9 @@
     padding: 0;
     border: 0;
     margin: 0;
+    &:not(.img *){
+        transition: all .3s ease-in-out;
+    }
 
     input:-webkit-autofill,
     input:-webkit-autofill:active {

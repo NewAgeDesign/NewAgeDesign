@@ -77,7 +77,6 @@ nav {
         font-weight: 500;
         font-size: 16px;
         &.cta{
-            transition: all .3s ease-in-out;
             border: 2px solid var(--active);
             background: var(--active);
             color: var(--background);
@@ -135,7 +134,7 @@ nav {
     width: 100%;
     gap: 16px;
     a{
-        background-color: var(--border);
+        box-shadow: 0 0 0 2px var(--active) inset;
         justify-content: center;
         color: var(--active);
         border-radius: 50px;
@@ -220,7 +219,7 @@ main{
                     width: 100%;
                 }
                 h1{
-                    font-weight: 700;
+                    font-weight: 500;
                     font-size: 42pt;
                     line-height: 1;
                     >span{
@@ -328,9 +327,15 @@ main{
                 }
             }
             .img{
+                box-shadow: 0 8px 32px 0 rgba(31, 135, 74, 0.11);
+                -webkit-backdrop-filter: blur(16px) saturate(180%);
+                border: 1px solid rgba(102, 189, 141, 0.18);
+                backdrop-filter: blur(16px) saturate(180%);
+                background: rgba(56, 92, 70, 0.25);
+                color: #0f111a;
                 border-radius: 8px;
-                position: relative;
                 aspect-ratio: 16/9;
+                position: relative;
                 padding: 8px;
                 width: 100%;
 
@@ -654,7 +659,6 @@ main{
                     display: flex;
                     gap: 16px;
                     a{
-                        background-color: var(--border);
                         justify-content: center;
                         color: var(--active);
                         border-radius: 50px;
@@ -771,7 +775,7 @@ main{
     }
 }
 footer{
-    background-color: var(--foreground);
+    background-color: #796836;
     padding: 72px 48px;
     max-width: 100dvw;
     flex-wrap: wrap;
@@ -919,11 +923,6 @@ footer{
                     }
                 }
                 .img{
-                    box-shadow: 0 8px 32px 0 rgba(31, 135, 74, 0.11);
-                    -webkit-backdrop-filter: blur(16px) saturate(180%);
-                    border: 1px solid rgba(102, 189, 141, 0.18);
-                    backdrop-filter: blur(16px) saturate(180%);
-                    background: rgba(56, 92, 70, 0.25);
                     border-radius: 8px;
                     aspect-ratio: 16/9;
                     height: auto;
