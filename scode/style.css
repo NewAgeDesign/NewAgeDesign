@@ -157,6 +157,104 @@ main{
     min-height: 100dvh;
     display: flex;
     width: 100%;
+    .chatbox{
+        box-shadow: 0 0 2px 1px rgba(102, 189, 141, 0.25) inset;
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        border: 1px solid rgba(102, 189, 141, 0.25);
+        backdrop-filter: blur(16px) saturate(180%);
+        background: rgba(56, 92, 70, 0.18);
+        border-radius: 8px;
+        position: fixed;
+        display: flex;
+        bottom: 24px;
+        z-index: 20;
+        right: 32px;
+        gap: 8px;
+        &.open{
+            width: 320px;
+            height: 480px;
+            padding: 16px;
+            flex-direction: column;
+            .head b{
+                display: block;
+            }
+            .messages{
+                flex-direction: column;
+                flex-grow: 1;
+                overflow-y: auto;
+                display: flex;
+                width: 100%;
+                gap: 8px;
+                margin-bottom: 8px;
+                .message{
+                    border: 1px solid var(--border);
+                    border-radius: 12px;
+                    padding: 8px 12px;
+                    line-height: 1.4;
+                    font-size: 12pt;
+                    max-width: 80%;
+                    *{
+                        font-size: 10pt;
+                    }
+                    icon{
+                        font-size: 16pt;
+                    }
+                    &.user{
+                        background-color: var(--background);
+                        flex-direction: column-reverse;
+                        border-bottom-right-radius: 0;
+                        color: var(--foreground);
+                        align-self: flex-end;
+                        display: flex;
+                        *{
+                            align-self: flex-end;
+                            text-align: right;
+                        }
+                    }
+                    &.bot{
+                        background-color: var(--foreground);
+                        border-bottom-left-radius: 0;
+                        align-self: flex-start;
+                        color: var(--primary);
+                    }
+                }
+            }
+        }
+        .head{
+            justify-content: space-between;
+            height: fit-content;
+            align-items: center;
+            display: flex;
+            span{
+                height: fit-content;
+                align-items: center;
+                display: flex;
+                gap: 8px;
+            }
+            .close{
+                font-size: 22px;
+                cursor: pointer;
+                padding: 4px 8px;
+                border-radius: 4px;
+                &:hover{
+                    background-color: var(--active);
+                    color: var(--foreground);
+                }
+            }
+            
+            icon{
+                color: var(--active);
+                border-radius: 50px;
+                padding: 2px 8px;
+                font-size: 28px;
+            }
+            b{
+                font-family: 'Poppins';
+                font-size: 16px;
+                display: none;
+            }
+        }
+    }
     >section{
         scroll-snap-align: start;
         min-height: 100dvh;
@@ -164,24 +262,31 @@ main{
         width: 100%;
     }
     #home{
-        padding: 0 16px;
+        padding: 0;
         .hero{
             justify-content: center;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             position: relative;
+            overflow: hidden;
             height: 100dvh;
+            display: flex;
             display: flex;
             width: 100%;
             .grid{
                 background-image: url(res/hbg.svg);
                 background-repeat: no-repeat;
                 background-position: center;
-                width: calc(100% + 32px);
                 background-size: cover;
+                flex-direction: column;
                 position: absolute;
                 height: 100dvh;
-                opacity: 0.2;
-                left: -16px;
+                display: flex;
+                opacity: 0.6;
                 z-index: -1;
+                width: 100%;
+                left: 0;
                 top: 0;
                 &::after{
                     /*set gradient at 90 degrees from bottom to top*/
@@ -204,6 +309,29 @@ main{
                     left: 0;
                     top: 0;
                 }
+            }
+            .sphere{
+                background: radial-gradient(circle, var(--active) 0%, #00000000 70%);
+                animation: pulse 2s ease-in-out infinite;
+                align-self: center;
+                border-radius: 50%;
+                position: absolute;
+                aspect-ratio: 1/1;
+                bottom: -100%;
+                z-index: 0;
+                width: 80%;
+            }
+            .world{
+                background-image: url(res/world.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                display: flex;
+                height: 50dvh;
+                width: 100%;
+                bottom: -10dvh;
+                z-index: 10;
             }
             .text{
                 justify-content: center;
@@ -626,10 +754,19 @@ main{
 
     }
     #contact{
+        justify-content: center;
+        flex-direction: column;
         padding: 72px 48px;
+        display: flex;
+        h3,p{
+            text-align: center;
+            font-weight: 500;
+        }
+
         .cform{
             justify-content: center;
             height: fit-content;
+            margin-top: 48px;
             display: flex;
             width: 100%;
             .details{
@@ -726,6 +863,7 @@ main{
                         gap: 10px;
                         label{
                             background-color: var(--background);
+                            border: 2px solid var(--border);
                             margin-bottom: -24px;
                             height: fit-content;
                             width: fit-content;
@@ -772,6 +910,11 @@ main{
                 }
             }
         }
+        form{
+            background-color: var(--foreground);
+            border-radius: 8px;
+            padding: 36px 36px;
+        }
     }
 }
 footer{
@@ -792,6 +935,19 @@ footer{
         min-width: 290px;
         display: flex;
         gap: 8px;
+        h4{
+            position: relative;
+            font-size: 18pt;
+            &:after{
+                background-color: var(--active);
+                position: absolute;
+                display: block;
+                bottom: -10px;
+                content: '';
+                height: 2px;
+                width: 100%;
+            }
+        }
         .logo{
             justify-content: start;
             align-items: center;
@@ -841,7 +997,8 @@ footer{
 }
 @media (max-width: 430px) {
     nav{
-        width: calc(100% - 32px);
+        max-width: calc(100% - 32px);
+        width: fit-content;
         bottom: 16px;
         a{
             padding: 2px 8px;
@@ -859,8 +1016,21 @@ footer{
         }
     }
     main{
+        
+    .chatbox{
+        bottom: 90px;
+        right: 16px;
+    }
         #home{
             .hero{
+                .sphere{
+                    width: 150%;
+                    top: -35%;
+                }
+                .world{
+                    height: 30dvh;
+                    bottom: -5dvh;
+                }
                 .text{
                     align-self: center;
                     padding: 0 16px;
@@ -1043,9 +1213,10 @@ footer{
                 text-align: center;
             }
             .cform{
+                flex-direction: column-reverse;
                 justify-content: center;
-                flex-direction: column;
                 text-align: center;
+                gap: 32px;
                 .details{
                     justify-content: center;
                     flex-direction: column;
@@ -1056,6 +1227,10 @@ footer{
                     display: flex;
                     width: 100%;
                     gap: 16px;
+                    
+                    .socials{
+                        justify-content: center;
+                    }
                     h4{
                         font-weight: 500;
                         font-size: 20pt;
@@ -1153,4 +1328,19 @@ footer{
     --angle: 0deg;
     --progress: 1;
     }
+}
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: .8;
+  }
+  50% {
+    transform: scale(1.2); /* grows */
+    opacity: 0.6;          /* optional subtle fade */
+  }
+  100% {
+    transform: scale(1);
+    opacity: .8;
+  }
 }
