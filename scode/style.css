@@ -171,12 +171,21 @@ main{
         right: 32px;
         gap: 8px;
         &.open{
-            width: 320px;
-            height: 480px;
-            padding: 16px;
             flex-direction: column;
-            .head b{
-                display: block;
+            border-radius: 16px;
+            color: #0d2822;
+            padding: 16px;
+            height: 480px;
+            width: 320px;
+            border-bottom-right-radius: 0;
+            .head{
+                b{
+                    text-transform: none;
+                    display: block;
+                }
+                icon{
+                    display: block;
+                }
             }
             .messages{
                 flex-direction: column;
@@ -219,12 +228,69 @@ main{
                     }
                 }
             }
+            form{
+                background-color: var(--foreground);
+                border-radius: 8px;
+                padding: 0 0 0 12px;
+                display: flex;
+                width: 100%;
+                gap: 8px;
+                input{
+                    background-color: var(--foreground);
+                    border: none;
+                    color: var(--primary);
+                    flex-grow: 1;
+                    line-height: 1.4;
+                    text-align: left;
+                    font-size: 12pt;
+                    outline: none;
+                    width: 100%;
+                    margin: 0;
+                    &::placeholder{
+                        color: var(--border);
+                    }
+                }
+                button{
+                    background-color: #00000000;
+                    border: none;
+                    color: var(--foreground);
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    font-size: 14pt;
+                    cursor: pointer;
+                    padding: 4px 0 4px 12px;
+                    display: flex;
+                    gap: 8px;
+                    icon{
+                        color: var(--active);
+                        margin-right: 8px;
+                        font-size: 18pt;
+                    }
+                    &:hover{
+                        background-color: var(--active);
+                        color: var(--background);
+                        icon{
+                            color: var(--background);
+                            margin-right: 8px;
+                            font-size: 18pt;
+                        }
+                    }
+                }
+            }
+        }
+        >.messages, >form{
+                display: none
         }
         .head{
             justify-content: space-between;
             height: fit-content;
             align-items: center;
             display: flex;
+            >icon{
+                display: none
+            }
             span{
                 height: fit-content;
                 align-items: center;
@@ -232,10 +298,11 @@ main{
                 gap: 8px;
             }
             .close{
+                border-radius: 4px;
+                padding: 4px 8px;
                 font-size: 22px;
                 cursor: pointer;
-                padding: 4px 8px;
-                border-radius: 4px;
+                color: var(--primary);
                 &:hover{
                     background-color: var(--active);
                     color: var(--foreground);

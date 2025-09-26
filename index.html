@@ -31,16 +31,16 @@
     <nav>
         <a href="#home" title="home"><icon>home</icon></a>
         <a href="#about" title="about"><icon>groups</icon></a>
-        <!--a href="#portfolio" title="portfolio"><icon>work_history</icon></a>
-        <a-- href="#testimonial" title="testimonial"><icon>star_half</icon></a-->
+        <a href="#portfolio" title="portfolio"><icon>work_history</icon></a>
+        <a href="#testimonial" title="testimonial"><icon>star_half</icon></a>
         <a href="#contact" title="contact"><icon>connect_without_contact</icon></a>
-        <a href="#" class="cta" title="join client base">Join Now</a>
+        <a href="#" class="cta" title="join client base">Join</a>
     </nav>
     <main>
-        <span class="chatbox open">
+        <span class="chatbox">
             <span class="head">
                 <span>
-                    <icon>robot_2</icon>
+                    <icon class="chat-toggle">robot_2</icon>
                     <b>Eleanor</b>
                 </span>
                 <icon class="close">close</icon>
@@ -55,6 +55,10 @@
                     <icon>account_circle</icon>
                 </span>
             </span>
+            <form action="#" method="">
+                <input type="text" name="message" placeholder="Type your message..." required>
+                <button type="submit"><icon>send</icon></button>
+            </form>
         </span>
         <section id="home">
             <span class="hero">
@@ -222,7 +226,7 @@
                 </ul>
             </span>
         </section>
-        <!--section id="portfolio">
+        <section id="portfolio">
             <h3>Our Portfolio</h3>
             <p>Showcasing our finest work across design, development, and branding projects.</p>
             <ul>
@@ -232,10 +236,13 @@
                 <li>Design</li>
             </ul>
             <span class="projects">
-                <p class="error"><--Projects currently under evaluation and will be uploaded soon--><!--</p>
+                <p class="error"><--Projects currently under evaluation and will be uploaded soon--></p>
             </span>
         </section>
-        <section-- id="testimonial"></section-->
+        <section id="testimonial">
+            <h3>Testimonials</h3>
+            <p>Don't just take our word for it, here's what our clients have to say about us.</p>
+        </section>
         <section id="contact">
             <h3>Get In Touch</h3>
             <p>Ready to elevate your brand? Let's discuss how we can bring your vision to life.</p>

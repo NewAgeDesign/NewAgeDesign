@@ -1,3 +1,5 @@
+
+// https://youtube.com/shorts/nCs3cLQkD2I?si=aj7nvhfuBQI8UdDy 
 function checkYearMonthDay() {
 
     const topLines = document.querySelectorAll('.text.top h1');
@@ -55,6 +57,16 @@ function checkYearMonthDay() {
 // Usage
 document.addEventListener('DOMContentLoaded', () => {
     checkYearMonthDay();
+    // Chatbox toggle
+    const chatClose = document.querySelector('.chatbox .close');
+    const chatToggle = document.querySelector('.chat-toggle');
+    const chatbox = document.querySelector('.chatbox');
+    chatToggle.addEventListener('click', () => {
+        chatbox.classList.toggle('open');
+    });
+    chatClose.addEventListener('click', () => {
+        chatbox.classList.remove('open');
+    });
 });
 
 // ...existing code...
@@ -149,3 +161,5 @@ function updateClock() {
 // Start clock
 setInterval(updateClock, 1000);
 updateClock();
+
+
