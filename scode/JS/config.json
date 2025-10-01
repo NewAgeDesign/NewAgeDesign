@@ -1,9 +1,9 @@
 {
-    "background": "#041718",
-    "foreground": "#051F20",
-    "border": "#163832",
-    "primary": "#E0E0E0",
-    "secondary": "#DAF1DE",
-    "active": "#EBD696",
-    "disabled": "#8EB69B"
+  "background": "#15141B",   
+  "foreground": "#1D1D28",   
+  "border": "#24243B",       
+  "primary": "#F0F0F0",      
+  "secondary": "#B9E3C2",    
+  "active": "#F2D87A",       
+  "disabled": "#607C6F"      
 }
