@@ -137,15 +137,59 @@ io = {
 
             case 'conStyle':
                 if (element === 'root') {
-                    io.in(ajax, get, param3, function(data){
-                        for (const key in data) {
-                            if (data.hasOwnProperty(key)) {
-                                document.documentElement.style.setProperty(`--${key}`, data[key]);
+                    io.in(ajax, get, param3, function(data) {
+                        // Detect mode structure
+                        const hasLight = data.light || data.lightMode;
+                        const hasDark = data.dark || data.darkMode;
+
+                        // Utility to apply CSS variables
+                        const applyTheme = (theme) => {
+                            for (const key in theme) {
+                                if (theme.hasOwnProperty(key)) {
+                                    document.documentElement.style.setProperty(`--${key}`, theme[key]);
+                                }
                             }
+                        };
+
+                        // If config is flat (no mode wrappers)
+                        if (!hasLight && !hasDark && Object.keys(data).length > 0) {
+                            console.log("Single mode theme detected");
+                            applyTheme(data);
+                            // 🔧 Add future functions here (e.g. setDefaultIcon())
+                            
+                            return;
                         }
+
+                        // If config is multi-mode (light/dark)
+                        if (hasLight || hasDark) {
+                            console.log("Multi-mode theme detected");
+
+                            // Detect user’s system preference
+                            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                            let activeTheme = prefersDark ? data.dark || data.darkMode : data.light || data.lightMode;
+
+                            applyTheme(activeTheme);
+
+                            // 🔧 Add extra handlers
+                            // Example: update icons
+                            // updateIcons(prefersDark ? 'dark' : 'light');
+
+                            // Example: enable toggling
+                            // toggleTheme = () => {
+                            //   const current = prefersDark ? 'light' : 'dark';
+                            //   applyTheme(data[current]);
+                            //   updateIcons(current);
+                            // };
+
+                            return;
+                        }
+
+                        // If config is empty
+                        console.log("no mode");
                     });
                 }
             break;
+
 
             case 'ajax':
             let method = element.toUpperCase();
