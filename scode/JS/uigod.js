@@ -142,7 +142,7 @@ io = {
                         const hasLight = data.light || data.lightMode;
                         const hasDark = data.dark || data.darkMode;
 
-                        // Utility to apply CSS variables
+                        // --- Utility: Apply CSS variables ---
                         const applyTheme = (theme) => {
                             for (const key in theme) {
                                 if (theme.hasOwnProperty(key)) {
@@ -151,45 +151,97 @@ io = {
                             }
                         };
 
-                        // If config is flat (no mode wrappers)
+                        // --- Save config globally (so toggler can use it) ---
+                        window.config = data;
+
+                        // --- CASE 1: Flat config (no light/dark structure) ---
                         if (!hasLight && !hasDark && Object.keys(data).length > 0) {
                             console.log("Single mode theme detected");
                             applyTheme(data);
-                            // 🔧 Add future functions here (e.g. setDefaultIcon())
-                            
                             return;
                         }
 
-                        // If config is multi-mode (light/dark)
+                        // --- CASE 2: Multi-mode (light/dark) ---
+                        let manualOverride = false;
+
                         if (hasLight || hasDark) {
                             console.log("Multi-mode theme detected");
 
                             // Detect user’s system preference
                             const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-                            let activeTheme = prefersDark ? data.dark || data.darkMode : data.light || data.lightMode;
+                            let currentMode = prefersDark ? "dark" : "light";
+                            let activeTheme = prefersDark ? (data.dark || data.darkMode) : (data.light || data.lightMode);
 
+                            // Apply the detected theme
                             applyTheme(activeTheme);
 
-                            // 🔧 Add extra handlers
-                            // Example: update icons
-                            // updateIcons(prefersDark ? 'dark' : 'light');
+                            // --- AUTO SYSTEM THEME SYNC ---
+                            // Create a listener for OS theme changes
+                            const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+                            let themeChangeTimeout;
+                            mediaQuery.addEventListener("change", (event) => {
+                                if (manualOverride) return;
+                                clearTimeout(themeChangeTimeout);
+                                themeChangeTimeout = setTimeout(() => {
+                                    const newMode = event.matches ? "dark" : "light";
+                                    const newTheme = data[newMode] || data[`${newMode}Mode`];
+                                    if (newTheme) applyTheme(newTheme);
+                                    console.log(`System theme changed → ${newMode} mode`);
+                                    const modeIcon = document.querySelector('.icons .mode');
+                                    if (modeIcon) {
+                                        modeIcon.innerHTML = newMode === "dark" ? "moon_stars" : "wb_sunny";
+                                    }
+                                }, 150);
+                            });
 
-                            // Example: enable toggling
-                            // toggleTheme = () => {
-                            //   const current = prefersDark ? 'light' : 'dark';
-                            //   applyTheme(data[current]);
-                            //   updateIcons(current);
-                            // };
+                            // --- MODE ICON HANDLER ---
+                            function setupModeIcon(mode) {
+                                const iconsContainer = document.querySelector('.icons');
+                                if (!iconsContainer) {
+                                    console.warn('No .icons element found');
+                                    return;
+                                }
 
+                                // Remove existing icon (prevent duplicates)
+                                const existingModeIcon = iconsContainer.querySelector('.mode');
+                                if (existingModeIcon) existingModeIcon.remove();
+
+                                // Create <icon class="mode">
+                                const modeIcon = document.createElement('icon');
+                                modeIcon.classList.add('mode');
+                                iconsContainer.appendChild(modeIcon);
+
+                                // Render icon based on current mode
+                                modeIcon.innerHTML = mode === "dark" ? "moon_stars" : "wb_sunny";
+
+                                // --- TOGGLER FUNCTION ---
+                                modeIcon.addEventListener('click', () => {
+                                    manualOverride = true; // user manually toggled
+                                    const newMode = mode === "dark" ? "light" : "dark";
+                                    mode = newMode;
+
+                                    // Update icon
+                                    modeIcon.innerHTML = newMode === "dark" ? "moon_stars" : "wb_sunny";
+
+                                    // Apply new theme
+                                    const newTheme = data[newMode] || data[`${newMode}Mode`];
+                                    if (newTheme) applyTheme(newTheme);
+
+                                    console.log(`Switched to ${newMode} mode`);
+                                });
+
+                            }
+
+                            // Initialize mode icon
+                            setupModeIcon(currentMode);
                             return;
                         }
 
-                        // If config is empty
+                        // --- CASE 3: Empty config ---
                         console.log("no mode");
                     });
                 }
             break;
-
 
             case 'ajax':
             let method = element.toUpperCase();
